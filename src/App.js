@@ -1,11 +1,11 @@
-
-import './App.css';
+import "./App.css";
+import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="text-3l font-bold underline">
-  Hello
-    </div>
+    <>
+      <Body />
+    </>
   );
 }
 
