@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import Header from "./Header";
-import { useNavigate } from "react-router-dom";
 import { checkSignInSignUpValidation } from "../utils/validate";
 import { auth } from "../utils/firebase";
 import {
@@ -17,7 +16,6 @@ const Login = () => {
   const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const toggleSignInForm = () => {
     seIsSignInForm(!isSignInForm);
